@@ -4,7 +4,8 @@
 	"description": "An FCC Backend Challenge",
 	"main": "server.js",
 	"scripts": {
-		"start": "PORT=3000 nodemon server.js"
+		"start": "PORT=3000 nodemon server.js",
+		"test": "standard --fix; jest --coverage"
 	},
 	"dependencies": {
 		"cors": "^2.8.0",
