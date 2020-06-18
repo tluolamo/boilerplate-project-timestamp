@@ -26,14 +26,16 @@ app.get('/api/hello', function (req, res) {
 
 app.get('/api/timestamp/:date_string?', function (req, res) {
   const dateString = req.params.date_string
-  // console.log(DATE_STRING)
+  // console.log(typeof dateString)
   let myDate
-  if (dateString) {
+  if (/^[0-9]+$/.test(dateString)) {
+    myDate = new Date(parseInt(dateString))
+  } else if (dateString) {
     myDate = new Date(dateString)
   } else {
     myDate = new Date()
   }
-  console.log(myDate.getTime())
+  // console.log(myDate.getTime())
   if (isNaN(myDate.getTime())) {
     res.json({ error: 'Invalid Date' })
   } else {
