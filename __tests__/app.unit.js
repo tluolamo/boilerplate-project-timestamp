@@ -22,7 +22,7 @@ describe('Test timestamp API', () => {
     expect(response.body.utc).toBe('Fri, 25 Dec 2015 00:00:00 GMT')
   })
 
-  test('It should respond to the GET method with a date', async () => {
+  test('It should respond to the GET method with a date when only digits are passed in', async () => {
     const response = await request(app).get('/api/timestamp/1451001600000')
 
     expect(response.statusCode).toBe(200)
