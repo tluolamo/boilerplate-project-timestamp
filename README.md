@@ -1,5 +1,6 @@
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=tluolamo_boilerplate-project-timestamp&metric=alert_status)](https://sonarcloud.io/dashboard?id=tluolamo_boilerplate-project-timestamp)
 ![CircleCI](https://img.shields.io/circleci/build/github/tluolamo/boilerplate-project-timestamp)
+[![codecov](https://codecov.io/gh/tluolamo/boilerplate-project-timestamp/branch/gomix/graph/badge.svg)](https://codecov.io/gh/tluolamo/boilerplate-project-timestamp)
 
 # API Project: Timestamp Microservice for FCC
 
