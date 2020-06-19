@@ -37,3 +37,10 @@ describe('Test timestamp API', () => {
     expect(response.body.error).toBe('Invalid Date')
   })
 })
+
+describe('Test Homepage', () => {
+  test('It should respond to the GET method', async () => {
+    const response = await request(app).get('/')
+    expect(response.statusCode).toBe(200)
+  })
+})
